@@ -1,49 +1,51 @@
-import React from "react"
+import React from 'react'
+import about from "../assets/img/card2.png";
 
-// 이미지를 링크
-import about from "../assets/img/about.png";
+const introText = {
+    title: "mbc academy_kcy",
+    desc: ["talent is", "found at the end of the", "effort"]
+};
 
 const Intro = () => {
-  return (
-    <section id="intro">
-      <div className="intro_inner">
-          <h1 className="intro_title">
-            mbc_academy_port
-          </h1>
-          <div className="intro_lines" aria-hidden="true">
-            <span className="line"></span>
-            <span className="line"></span>
-            <span className="line"></span>
-            <span className="line"></span>
-            <span className="line"></span>
-            <span className="line"></span>
-            <span className="line"></span>
-          </div>
+    return (
+        <section id='intro'>
+            <div className="intro_inner">
+                <div className="intro_title">
+                    {introText.title}
+                </div>
 
-          <div className="intro_text">
-            <div className="text">
-              <div>종강일이 8월 9일</div>
-              <div>2차포폴 8월 2일</div>
-              <div>프로필 8월 5일 완성합시다.</div>
-            </div>
-            <div className="img">
-                <img src={about} alt="이미지 연결" />
-            </div>
-          </div>
+                <div className="intro_lines" aria-hidden="true">
+                    <span className='line'></span>
+                    <span className='line'></span>
+                    <span className='line'></span>
+                    <span className='line'></span>
+                    <span className='line'></span>
+                    <span className='line'></span>
+                    <span className='line'></span>
+                </div>
+                <div className="intro_text">
+                    <div className="text">
+                        <div>{introText.desc[0]}</div>
+                        <div>{introText.desc[1]}</div>
+                        <div>{introText.desc[2]}</div>
 
-          <div className="intro_lines bottom" 
-          aria-hidden="true">
-            <span className="line"></span>
-            <span className="line"></span>
-            <span className="line"></span>
-            <span className="line"></span>
-            <span className="line"></span>
-            <span className="line"></span>
-            <span className="line"></span>
-          </div>
-      </div>
-    </section>
-  )
+                    </div>
+                    <div className="img">
+                        <img src={about} alt="" />
+                    </div>
+                </div>
+                <div className="intro_lines bottom" aria-hidden="true">
+                    <span className='line'></span>
+                    <span className='line'></span>
+                    <span className='line'></span>
+                    <span className='line'></span>
+                    <span className='line'></span>
+                    <span className='line'></span>
+                    <span className='line'></span>
+                </div>
+            </div>
+        </section>
+    )
 }
 
 export default Intro
