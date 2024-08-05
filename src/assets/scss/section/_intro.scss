@@ -17,13 +17,13 @@
         }
 
         .intro_title {
-            font-size: 7vw;
+            font-size: 9vw;
             text-transform: uppercase;
             line-height: 1;
             font-weight: 800;
             white-space: nowrap;
             text-indent: -0.5vw;
-            text-shadow: 0px 0px 1vw;
+
             @media(max-width:320px) {
                 display: none;
             }

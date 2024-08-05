@@ -1,8 +1,8 @@
 import React from 'react'
-import about from "../assets/img/card2.png";
+import about from "../assets/img/about.png";
 
 const introText = {
-    title: "mbc academy_kcy",
+    title: "port developer",
     desc: ["talent is", "found at the end of the", "effort"]
 };
 
